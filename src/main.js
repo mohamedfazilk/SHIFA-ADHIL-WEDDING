@@ -51,27 +51,32 @@ function initCountdown() {
 }
 
 // --------------------------------------------------------------------------
-// 2. AUDIO PLAYER WITH UPLOADED BARAKALLAH MP3 (Starts at 00:17)
+// 2. AUDIO PLAYER WITH UPLOADED BARAKALLAH MP3 (Loops 1:12 to 1:30 min)
 // --------------------------------------------------------------------------
 function initAudioPlayer() {
   const audioBtn = document.getElementById('audio-toggle-btn');
   const playingIcon = document.getElementById('audio-icon-playing');
   const mutedIcon = document.getElementById('audio-icon-muted');
-  
+
   const bgAudio = new Audio('/audio/Barakallah(KoshalWorld.Com).mp3');
   bgAudio.loop = true;
   bgAudio.volume = 0.8;
-  const START_TIME = 17; // Start at 00:17 as requested
+  const START_TIME = 72; // 1:12 min (72 seconds)
+  const END_TIME = 90;   // 1:30 min (90 seconds)
 
   let isPlaying = false;
-  let hasInitializedStartTime = false;
+
+  bgAudio.addEventListener('timeupdate', () => {
+    if (isPlaying && (bgAudio.currentTime >= END_TIME || bgAudio.currentTime < START_TIME)) {
+      bgAudio.currentTime = START_TIME;
+    }
+  });
 
   function playAudio() {
-    if (!hasInitializedStartTime || bgAudio.currentTime < START_TIME) {
+    if (bgAudio.currentTime < START_TIME || bgAudio.currentTime >= END_TIME) {
       bgAudio.currentTime = START_TIME;
-      hasInitializedStartTime = true;
     }
-    
+
     bgAudio.play().then(() => {
       isPlaying = true;
       updateUI(true);
@@ -121,14 +126,14 @@ function initAudioPlayer() {
         showToast('🔇 Audio muted');
       } else {
         playAudio();
-        showToast('🎵 Playing "Barakallah" (from 00:17)');
+        showToast('🎵 Playing "Barakallah" (1:12 - 1:30)');
       }
     });
   }
 
-  // Optional: Auto-play on first click anywhere on page if not already playing
+  // Auto-play on first click anywhere on page if not already playing
   const handleFirstInteraction = () => {
-    if (!isPlaying && !hasInitializedStartTime) {
+    if (!isPlaying) {
       playAudio();
     }
     document.removeEventListener('click', handleFirstInteraction);
@@ -277,7 +282,7 @@ function loadSavedWishes() {
 }
 
 function escapeHTML(str) {
-  return str.replace(/[&<>'"]/g, 
+  return str.replace(/[&<>'"]/g,
     tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
   );
 }
