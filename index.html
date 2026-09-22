@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Shifa & Aadil</title>
+  <meta name="description"
+    content="Join Aadil and Shifa to celebrate their wedding on Sunday, 11 October 2026 at Qamar Palace, Kallumpuram." />
+  <meta name="author" content="Aadil & Shifa" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Aadil & Shifa | Wedding Invitation" />
+  <meta property="og:description" content="We warmly invite you to celebrate the wedding of Aadil and Shifa." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="beige-theme">
+
+  <!-- Floating Sparkles & Particles Background Container -->
+  <div class="particles-overlay" aria-hidden="true">
+    <span class="sparkle" style="top:8%; left:12%; animation-delay:0s; animation-duration:3.2s">✦</span>
+    <span class="sparkle" style="top:18%; left:84%; animation-delay:1.2s; animation-duration:4s">✨</span>
+    <span class="sparkle" style="top:32%; left:15%; animation-delay:0.5s; animation-duration:4.5s">✦</span>
+    <span class="sparkle" style="top:42%; left:88%; animation-delay:2.1s; animation-duration:3.8s">✦</span>
+    <span class="sparkle" style="top:62%; left:10%; animation-delay:1.7s; animation-duration:4.2s">✨</span>
+    <span class="sparkle" style="top:14%; left:75%; animation-delay:0.8s; animation-duration:3.5s">✦</span>
+    <span class="sparkle" style="top:38%; left:92%; animation-delay:2.5s; animation-duration:4.8s">•</span>
+    <span class="sparkle" style="top:72%; left:82%; animation-delay:1.0s; animation-duration:3.9s">✦</span>
+    <span class="sparkle" style="top:82%; left:22%; animation-delay:2.8s; animation-duration:4.1s">✨</span>
+    <span class="sparkle" style="top:5%; left:48%; animation-delay:1.4s; animation-duration:4.3s">✦</span>
+    <span class="sparkle" style="top:55%; left:6%; animation-delay:0.3s; animation-duration:3.6s">•</span>
+    <span class="sparkle" style="top:88%; left:72%; animation-delay:1.9s; animation-duration:3.7s">✦</span>
+  </div>
+
+  <!-- Audio Controls Widget (Floating) -->
+  <button id="audio-toggle-btn" class="audio-widget-btn" aria-label="Toggle Background Music" title="Play / Mute Audio">
+    <span class="audio-icon-wrap">
+      <svg id="audio-icon-playing" class="icon-svg active-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <path d="M11 5L6 9H2v6h4l5 4V5z" />
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+      </svg>
+      <svg id="audio-icon-muted" class="icon-svg hidden-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <line x1="1" y1="1" x2="23" y2="23" />
+        <path d="M9 9v6h4l5 4V5l-5.64 4.51" />
+      </svg>
+    </span>
+    <span class="soundwave-bars">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </span>
+  </button>
+
+  <main id="app-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <!-- Background Image with Soft Beige Backdrop Gradient -->
+      <div class="hero-bg-wrapper">
+        <img src="/images/couple-bg.jpg" alt="Aadil & Shifa" class="hero-bg-image" />
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <!-- Hero Content Container -->
+      <div class="hero-content">
+        <!-- Arabic Bismillah Header -->
+        <div class="bismillah-header fade-in">
+          <p class="arabic-text-bismillah" lang="ar" dir="rtl">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+          <div class="header-divider">
+            <span class="line"></span>
+            <span class="divider-text">TOGETHER WITH THEIR FAMILIES</span>
+            <span class="line"></span>
+          </div>
+        </div>
+
+        <!-- Main Names & Title -->
+        <div class="names-container fade-in-up">
+          <h1 class="main-title">Shifa &amp; Aadil</h1>
+          <div class="script-subtitle-wrap">
+            <span class="sub-line"></span>
+            <span class="script-subtitle">Wedding Celebration</span>
+            <span class="sub-line"></span>
+          </div>
+        </div>
+
+        <!-- Quranic Verse Glass Card -->
+        <div class="quran-card glass-card fade-in-up delay-1">
+          <p class="quran-verse">
+            “And among His signs is that He created for you mates from yourselves, that you may find tranquillity in
+            them.”
+          </p>
+          <p class="quran-ref">— QURAN 30:21 —</p>
+        </div>
+
+        <!-- Hero Date Footer Badge -->
+        <div class="hero-date-badge fade-in-up delay-2">
+          <p class="date-text">SUNDAY · 11 OCTOBER 2026</p>
+        </div>
+      </div>
+
+      <div class="scroll-down-indicator">
+        <a href="#solicit-section" class="scroll-link" aria-label="Scroll to invitation details">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="scroll-chevron">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- SOLICIT INVITATION SECTION -->
+    <section id="solicit-section" class="solicit-section">
+      <div class="section-container">
+        <div class="ornate-line"></div>
+
+        <!-- Arabic Greeting -->
+        <p class="arabic-salam" lang="ar" dir="rtl">السلام عليكم ورحمة الله وبركاته</p>
+        <p class="arabic-subtext">“In the name of Allah, the most beneficent and most merciful”</p>
+
+        <!-- Solicit Glass Card -->
+        <div class="solicit-card glass-card">
+          <div class="ornate-corner top-left">✦</div>
+          <div class="ornate-corner top-right">✦</div>
+          <div class="ornate-corner bottom-left">✦</div>
+          <div class="ornate-corner bottom-right">✦</div>
+
+          <p class="solicit-body">
+            Cordially solicit your prayers and esteemed presence with family on the auspicious occasion of the marriage
+            of our son
+          </p>
+
+          <div class="gold-gradient-divider"></div>
+
+          <h2 class="couple-solicit-names">
+            Shifa <span class="with-text">with</span> Aadil
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAVE THE DATE & COUNTDOWN SECTION -->
+    <section class="countdown-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="sub-heading">SAVE THE DATE</span>
+          <h2 class="main-date-heading">11 October 2026</h2>
+          <p class="hijri-date">Inshah Allah · 29 Rabi-ul-Akhir 1448</p>
+        </div>
+
+        <!-- Dynamic Ticking Countdown Grid -->
+        <div class="countdown-grid" id="countdown" aria-label="Live countdown to wedding">
+          <div class="countdown-box glass-card">
+            <span class="count-val" id="count-days">00</span>
+            <span class="count-label">DAYS</span>
+          </div>
+          <div class="countdown-box glass-card">
+            <span class="count-val" id="count-hours">00</span>
+            <span class="count-label">HOURS</span>
+          </div>
+          <div class="countdown-box glass-card">
+            <span class="count-val" id="count-minutes">00</span>
+            <span class="count-label">MINUTES</span>
+          </div>
+          <div class="countdown-box glass-card">
+            <span class="count-val" id="count-seconds">00</span>
+            <span class="count-label">SECONDS</span>
+          </div>
+        </div>
+
+        <!-- Event Key Details Cards (Date, Lunch, Venue) -->
+        <div class="event-cards-grid">
+
+          <!-- Date Card -->
+          <div class="event-card glass-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M8 2v4M16 2v4" />
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" />
+              </svg>
+            </div>
+            <h3 class="card-title">Sunday</h3>
+            <p class="card-detail">11 October 2026</p>
+          </div>
+
+          <!-- Lunch Card (Featured) -->
+          <div class="event-card glass-card featured">
+            <div class="card-icon gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+                <path d="M7 2v20" />
+                <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+              </svg>
+            </div>
+            <h3 class="card-title highlight">Wedding Lunch</h3>
+            <p class="card-detail bold">11:00 AM – 3:00 PM</p>
+            <p class="card-subdetail">With family &amp; friends</p>
+          </div>
+
+          <!-- Venue Card -->
+          <div class="event-card glass-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3 class="card-title">Qamar Palace</h3>
+            <p class="card-detail">Kallumpuram</p>
+          </div>
+
+        </div>
+
+        <!-- Interactive Actions Buttons -->
+        <div class="action-buttons-group">
+          <a href="https://maps.app.goo.gl/bnx64uTrviwENbma9" target="_blank" rel="noreferrer" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-svg">
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            View Location
+          </a>
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- RSVP & WISH MODAL -->
+  <div id="rsvp-modal" class="modal-overlay hidden" aria-hidden="true">
+    <div class="modal-card glass-card">
+      <button id="close-modal-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <span class="sub-heading">CELEBRATE WITH US</span>
+        <h2 class="modal-title">RSVP &amp; Send Blessings</h2>
+        <p class="modal-desc">Please share your wishes for Aadil &amp; Shifa</p>
+      </div>
+
+      <form id="rsvp-form" class="modal-form">
+        <div class="form-group">
+          <label for="guest-name" class="form-label">Your Name</label>
+          <input type="text" id="guest-name" class="form-input" placeholder="e.g. Arman & Family" required />
+        </div>
+
+        <div class="form-group">
+          <label for="attendance-status" class="form-label">Will you be attending?</label>
+          <select id="attendance-status" class="form-select" required>
+            <option value="Joyfully Attending">Joyfully Attending</option>
+            <option value="Regretfully Unable to Attend">Sending Prayers (Unable to Attend)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="guest-count" class="form-label">Number of Guests</label>
+          <select id="guest-count" class="form-select">
+            <option value="1 Guest">1 Guest</option>
+            <option value="2 Guests">2 Guests</option>
+            <option value="3+ Family Members">3+ Family Members</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="guest-message" class="form-label">Your Wishes / Dua</label>
+          <textarea id="guest-message" class="form-textarea" rows="3"
+            placeholder="Write your heartfelt prayers & congratulations..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-filled form-submit-btn">
+          Send RSVP &amp; Wishes ✦
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL FOR GALLERY -->
+  <div id="lightbox-modal" class="lightbox-overlay hidden" aria-hidden="true">
+    <button id="close-lightbox-btn" class="lightbox-close-btn">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Expanded View" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript Module -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
